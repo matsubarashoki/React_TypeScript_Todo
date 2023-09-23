@@ -23,7 +23,7 @@ const TodoComporment = () => {
     <>
       <input type="text" value={inputText} onChange={changeHandler} />
       <button onClick={addTodoItem}>追加</button>
-      <TaskList todos={todos} />
+      <TaskList todos={todos} setTodos={setTodos} />
     </>
   );
 };
